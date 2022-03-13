@@ -15,7 +15,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class Base {
 	
 	@BeforeSuite
-	public void BeforeSuiteMethod() {
+	public static void BeforeSuiteMethod() {
 		System.out.println("Beforesuite log");
 		
 		if (VariableDeclaration.browserName.equals("Chrome")) {
@@ -37,7 +37,7 @@ public class Base {
 	
 
 	@AfterSuite
-	public void AfterSuiteMethod() throws InterruptedException {
+	public static void AfterSuiteMethod() throws InterruptedException {
 		System.out.println("Aftersuite log");
 		
 		Thread.sleep((long) VariableDeclaration.timeMS);

@@ -9,7 +9,7 @@ public class VariableDeclaration {
 
 	public static String browserName = "Chrome";
 	public static String testURL = "https://www.saucedemo.com/";
-	public static long timeMS = 2000;
+	public static long timeMS = 3000;
 
 	public static int polling_time = 100;
 
@@ -36,5 +36,14 @@ public class VariableDeclaration {
 			"//*[@id='logout_sidebar_link']",
 			"//*[@id='reset_sidebar_link']",		
 	};
+	
+	public static String[] inventoryItemsArray = {
+			"//select/option[@value='hilo']",
+			"//select/option[@value='lohi']",
+			"//select/option[@value='za']",
+			"//select/option[@value='az']",		
+	};
+	
+	public static String inventoryFilterClickXPath = "//*[@class='product_sort_container']";
 	
 }

@@ -3,11 +3,11 @@
 <suite name="Failed suite [Login Test Case]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Login Test Case(failed)">
     <classes>
-      <class name="Navigation.LoginPageNavigation">
+      <class name="CartManagement.CartCheckOut">
         <methods>
-          <include name="LogintestCaseMethod"/>
+          <include name="CartCheckOutMethod"/>
         </methods>
-      </class> <!-- Navigation.LoginPageNavigation -->
+      </class> <!-- CartManagement.CartCheckOut -->
     </classes>
   </test> <!-- Login Test Case(failed) -->
 </suite> <!-- Failed suite [Login Test Case] -->

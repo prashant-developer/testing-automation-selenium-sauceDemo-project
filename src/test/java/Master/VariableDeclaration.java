@@ -2,8 +2,14 @@ package Master;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.annotations.Test;
 
 public class VariableDeclaration {
+
+	public static final String wait = null;
 
 	public static WebDriver driver;
 
@@ -46,4 +52,42 @@ public class VariableDeclaration {
 	
 	public static String inventoryFilterClickXPath = "//*[@class='product_sort_container']";
 	
+	public static String pageSliderXPath = "//*[@id='item_3_title_link']"; 
+	
+	public static String[] productItemsXpathArray = {
+			"//*[@id='add-to-cart-sauce-labs-backpack']",
+			"//*[@id='add-to-cart-sauce-labs-bike-light']",
+			"//*[@id='remove-sauce-labs-bike-light']",
+			"//*[@id='remove-sauce-labs-fleece-jacket']",
+			"//*[@id='add-to-cart-sauce-labs-bolt-t-shirt']",
+			"//*[@id='remove-sauce-labs-bolt-t-shirt']",
+			"//*[@id='add-to-cart-sauce-labs-bolt-t-shirt']",
+			"//*[@id='remove-sauce-labs-backpack']",
+	};
+	
+	public static String cartIconXPath = "//*[@id='shopping_cart_container']";
+	
+	public static String continueShoppingClickXPath = "//*[@id='continue-shopping']";
+	
+	public static String checkOutClickXPath = "//*[@id='checkout']";
+	
+	public static String checkOutFirstNameXpath = "//*[@id='first-name']";
+	
+	public static String checkOutFirstName = "Prashant";
+	
+	public static String checkOutLastNameXPath = "//*[@id='last-name']";
+	
+	public static String checkOutLastName = "Gadhiya";
+	
+	public static String checkOutPostalCodeXpath = "//*[@id='postal-code']";
+	
+	public static String checkOutPostalCode = "395004";
+	
+	public static String checkOutContinueXPath = "//*[@id='continue']";
+	
+	public static String backHomeButtonXPath =  "//*[@id='back-to-products']";
+	
+	public static String finishClickXPath = "//*[@id='finish']";
+	
+	public static String linkedInXPath = "//*[@href='https://www.linkedin.com/company/sauce-labs/']";
 }

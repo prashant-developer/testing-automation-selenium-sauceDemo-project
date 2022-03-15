@@ -46,7 +46,7 @@ public class Base {
 		System.out.println("Aftersuite log");
 
 		Thread.sleep((long) VariableDeclaration.timeMS);
-		// VariableDeclaration.driver.quit();
+		VariableDeclaration.driver.quit();
 
 		System.out.println("Browser closed log");
 
